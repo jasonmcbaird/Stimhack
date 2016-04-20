@@ -1,0 +1,42 @@
+Card
+    Name - String
+    Side - Corp or Runner? Enum
+    Faction - String
+    Cost - Int?
+        Nil: -1
+    InfluenceCost - Int?
+        Nil: -1
+    RulesText - String
+    FlavorText - String?
+                Nil: empty string
+    Set - String
+    Type - CardType
+
+CardType
+    Name - String
+    Subtypes - [String]
+
+    Subclasses:
+        CorpIdentity
+            DeckSize - Int
+            InfluencePoints - Int
+        Operation
+        Agenda
+            AgendaPoints - Int
+        Ice
+            Strength - Int
+        Upgrade
+            Trash Cost - Int
+        Asset
+            Trash Cost - Int
+        RunnerIdentity
+            DeckSize - Int
+            InfluencePoints - Int
+            LinkStrength - Int
+        Hardware
+        Resource
+        Program
+            MemoryCost - Int
+            Strength - Int?
+                Nil: -1
+        Event

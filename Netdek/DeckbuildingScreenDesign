@@ -1,0 +1,20 @@
+Card size ratio: 0.71770334928
+                1.3933333
+
+Maybe only view this screen with X or less cards? 60?
+
+Foreach card type:
+    Sort
+    Place first card image in top-left
+        A set distance from side of screen or last column
+        A set distance from the top of the screen
+        If offscreen, shift to next row
+        If still offscreen, something's gone screwy
+        Lock width and height based on screen size
+    Place second card image overlapping last image.
+        Lock sides to first image.
+        Lock top to a set distance down from first top.
+        Lock width and height based on screen size
+
+ColumnController object keeps track of all UIImageViews of a certain card type?
+Separate icebreaker from program. Thus, five card types for each faction / each deck.

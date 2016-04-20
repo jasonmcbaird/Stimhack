@@ -1,0 +1,29 @@
+Netdek is a deckbuilding app for the card game called Android: Netrunner.
+
+NECESSITIES
+1. It allows users to view a full list of cards in the game.
+2. It allows users to keep track of any number of "deck lists," sets of cards the user has put together for use in a specific match.
+    A. Deck lists have restrictions on them:
+        I. Each deck needs one "Identity." That card determines several aspects of the entire deck:
+            a. Which side the deck is on: Runner or Corp.
+                i. Runner decks cannot include Corp cards and vice-versa.
+            b. Which faction the deck is of
+                i. A deck can have any number of cards in its faction, regardless of Influence
+            c. How much Influence the deck can spend.
+                i. Each card from outside the deck's faction costs zero through five Influence
+            d. The minimum number of cards in the deck.
+    B. While building a deck, Netdek must allow the user to ignore most restrictions. They can go over the influence limit or have less cards in their deck than the minimum.
+        I. However, breaking any rule marks the deck as "illegal."
+        II. One rule cannot be broken even while building decks: No runner cards in corp decks and vice versa.
+    C. Users must be able to add or remove any cards within the one rule.
+
+STRETCH
+S1. Users should be able to replicate a decklist to create different versions of the same theme.
+        I. Users should be able to switch the identity of the deck even after it's built. That'll often make the deck illegal, of course.
+S2. Users should be able to limit the full list of cards to only the sets they own.
+S3. Netdek should have a screen for visual representation of the deck, with cards laid out by type, then cost
+S4. Validate odd restriction modifiers (mostly influence modifiers). Alliance cards and The Professor and such will be funky.
+
+BIG DESIGN
+1. Change the name
+2. https://www.youtube.com/watch?v=I87A99w_w2g
